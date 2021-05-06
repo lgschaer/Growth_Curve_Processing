@@ -5,6 +5,9 @@ library(tidyverse)
 
 #Load data
 ##Your data should be formatted in a CSV file
+growth <- read.csv(url('https://github.com/lgschaer/Growth_Curve_Processing/blob/main/05042021_ReSource_Growth.csv'))
+head(growth)
+
 growth <- as.csv("/Users/lgschaer/Desktop/MTU_Projects/04192021_ReSource_Concentration/Concentration_Growth_Curve_Data.csv", row.names = 1, header = TRUE, sep = ",", check.names = TRUE, stringsAsFactors = TRUE)
 head(growth)
 
